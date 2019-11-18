@@ -303,6 +303,8 @@ void BST_312 <ItemType>::insertItem(TreeNode*& t, const ItemType& newItem)
             else {
                 TreeNode *newNode = new TreeNode;
                 newNode->data=newItem;
+                newNode->left=NULL;
+                newNode->right=NULL;
                 t->right = newNode;
             }
         }
@@ -313,6 +315,8 @@ void BST_312 <ItemType>::insertItem(TreeNode*& t, const ItemType& newItem)
             else {
                 TreeNode *newNode = new TreeNode;
                 newNode->data=newItem;
+                newNode->left=NULL;
+                newNode->right=NULL;
                 t->left = newNode;
             }
         }
@@ -321,6 +325,8 @@ void BST_312 <ItemType>::insertItem(TreeNode*& t, const ItemType& newItem)
     else {
         TreeNode *newNode = new TreeNode;
         newNode->data=newItem;
+        newNode->left=NULL;
+        newNode->right=NULL;
         t=newNode;
     }
 }
